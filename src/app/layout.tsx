@@ -1,9 +1,6 @@
 import { rootMetadata } from "@/config/metadata";
 import "./globals.css";
 import { PublicLayout } from "@/public/PublicLayout";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = rootMetadata;
 
@@ -14,7 +11,7 @@ type RootLayoutProps = Readonly<{
 const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <html lang="fa" dir="rtl">
-      <body className={inter.className}>
+      <body className={`w-screen h-screen flex flex-col overflow-x-hidden`}>
         <PublicLayout>{children}</PublicLayout>
       </body>
     </html>
