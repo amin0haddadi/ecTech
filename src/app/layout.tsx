@@ -10,8 +10,8 @@ type RootLayoutProps = Readonly<{
 
 const RootLayout = ({ children }: RootLayoutProps) => {
   return (
-    <html lang="fa" dir="rtl">
-      <body className={`w-screen h-screen flex flex-col overflow-x-hidden`}>
+    <html lang="en" dir="rtl">
+      <body className="min-h-screen h-full w-full bg-white dark:bg-[#1c1c2c]">
         <PublicLayout>{children}</PublicLayout>
       </body>
     </html>
